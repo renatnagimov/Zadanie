@@ -1,0 +1,350 @@
+/************** Оформление страницы **************/
+ /* * { Действует на все элементы страницы
+    margin: 0;
+    padding: 0;
+} */
+/************** Оформление видимой части **************/
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(236, 235, 235);
+    margin: 0;
+    padding: 0;
+}
+.page-main {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+}
+/************** Шапка **************/
+.header {
+    display: inline-flex;
+    width: 100%;
+    background-color: rgb(25, 69, 122);
+    height: 50px;
+    border-bottom: 2px solid rgb(95, 95, 95);
+    justify-content: center;
+    align-items: center; 
+}
+.text {
+    color: white;
+    margin: 9px;
+}
+/************** Шапка, меню-гамбургер **************/
+.menu-btn {
+    display: block;
+    width: 49px;
+    height: 49px;
+    /* background-color: rgb(29, 61, 99); */
+    border-radius: 2px;
+    position: relative;
+}
+.menu-btn span,
+.menu-btn span::before,
+.menu-btn span::after {
+    position: absolute;
+    top: 50%;  margin-top: -1px;
+    left: 50%; margin-left: -10px;
+    width: 20px;
+    height: 2px;
+    background-color: white;
+}
+.menu-btn span::before,
+.menu-btn span::after {
+    content: '';
+    transition: 0.5s;
+}
+.menu-btn span::before {
+    transform: translateY(-5px);
+}
+.menu-btn span::after {
+    transform: translateY(5px);
+}
+/************** Секция 1 **************/
+.section {
+    display: flex;
+    flex: 1 1 20%;
+    justify-content: flex-start;
+}
+/************** Секция 2 **************/
+.section2 {
+    display: flex;
+    flex: 1 1 60%;
+    justify-content: center;
+}
+/************** Секция 3 **************/
+.section3 {
+    display: flex;
+    flex: 1 1 20%;
+    justify-content: flex-end;
+}
+/************** Кнопки Секция 2 **************/
+.button2{
+    cursor: pointer;
+    padding: 4px;
+    margin-top: 2px;
+    border: none;
+    margin: 2px;
+    background: rgb(25, 69, 122);
+    border-radius: 5px;
+}
+.button2:hover {
+    background: white;
+}
+/************** Кнопки Секция 3 **************/
+.button3 {
+    cursor: pointer;
+    padding: 5px;
+    margin-top: 2px;
+    border: none;
+    margin: 2px;
+    background: rgb(25, 69, 122);
+    border-radius: 5px;
+}
+.button3:hover {
+    background: white;
+}
+/************** Поиск **************/
+input[type=text] {
+    padding: 3px;
+    margin-top: 2px;
+    border: none;
+    margin: 4px;
+    width: 300px;
+    font-style: italic;
+}
+/************** Иконки **************/
+.fa {
+    font-size: 17px;
+    color: white;
+}
+.fa:hover {
+    font-size: 17px;
+    color: rgb(29, 61, 99);
+}
+/* .fas {
+    font-size: 17px;
+    color: white;
+} */
+/************** Контейнер главный **************/
+.container-main {
+    display: flex;
+    padding: 5px;
+    /* height: calc(100% - 50px); Отключит, из-за того, что не надо */
+}
+/************** Контейнер 1 **************/
+.container1 {
+    display: inline-flex;
+    width: 10%;
+    min-width: 200px;
+    background-color: white;
+    height: 400px;
+    justify-content: center;
+    /* border: 1px solid gray; */
+}
+/************** Контейнер 1 Оформление шрифта в меню-таблице**************/
+.table-fount1 {
+    font-size: smaller;
+    padding: 0px 8px;
+    word-spacing: 9px;
+}
+.table-fount2 {
+    font-size: smaller;
+    padding: 0px 8px;
+    word-spacing: 11px;
+}
+.table-fount3 {
+    font-size: smaller;
+    padding: 0px 8px;
+    word-spacing: 5px;
+}
+.table-fount4 {
+    font-size: smaller;
+    padding: 0px 8px;
+    word-spacing: 4px;
+}
+.table-fount5 {
+    font-size: smaller;
+    padding: 0px 8px;
+    word-spacing: 10px;
+}
+.table-fount6 {
+    font-size: smaller;
+    padding: 0px 8px;
+    word-spacing: 10px;
+}
+.table-fount7 {
+    font-size: smaller;
+    padding: 0px 8px;
+    word-spacing: 8px;
+}
+.table-fount8 {
+    font-size: smaller;
+    padding: 0px 8px;
+    word-spacing: 8px;
+}
+.table-fount9 {
+    font-size: smaller;
+    padding: 0px 8px;
+    word-spacing: 8px;
+}
+.table-fount10 {
+    font-size: smaller;
+    padding: 0px 8px;
+    word-spacing: 8px;
+}
+.table-fount11 {
+    font-size: smaller;
+    padding: 0px 8px;
+    word-spacing: 8px;
+}
+/************** Контейнер 1 Меню таблица **************/
+.table-menu{
+    border: 1px solid white;
+    height: 400px;
+    cursor: pointer;
+}
+/************** Контейнер 1 кнопка авторизиция **************/
+.fa-key{
+    color: rgb(126, 173, 78);
+}
+/************** Контейнер 1 кнопка Юзер **************/
+.fa-user {
+    color: rgb(128, 172, 255);
+}
+/************** Контейнер 1 кнопка Группа **************/
+.fa-users {
+    color: rgb(91, 148, 255);
+}
+/************** Контейнер 1 кнопка Добавить в группу **************/
+.fa-user-plus {
+    color: rgb(219, 101, 101);
+    /* font-size: 15px; */
+}
+/************** Контейнер 1 кнопка Гость **************/
+.fa-user-secret {
+    color: rgb(218, 151, 88);
+}
+/************** Контейнер 1 кнопка Дата **************/
+.fa-database {
+    color: rgb(209, 198, 49);
+}
+/************** Контейнер 1 кнопка Структура **************/
+.fa-bar-chart {
+    color: rgb(119, 50, 199);
+}
+/************** Контейнер 1 кнопка Маштаб **************/
+.fa-sliders {
+    color: rgb(199, 72, 50);
+}
+/************** Контейнер 1 кнопка Расширения **************/
+.fa-cog {
+    color: rgb(118, 179, 118);
+}
+/************** Контейнер 1 кнопка Фактурирование **************/
+.fa-list-alt {
+    color: rgb(163, 107, 228);
+}
+.fa-suitcase {
+    color: rgb(116, 176, 211);
+}
+/************** Контейнер 2 **************/
+.container2 {
+    display: inline-flex;
+    width: 20%;
+    min-width: 350px;
+    background-color: white;
+    height: 800px;
+    justify-content: center;
+    /* border: 1px solid rgb(185, 185, 185); */
+    margin-left: 5px;
+}
+/************** Контейнер 2 Меню таблица **************/
+.table-menu2{
+    border: 1px solid white;
+}
+/************** Контейнер 2 Фильтр Таблицы **************/
+input[type=text2] {
+    border: none;
+    width: 87%;
+    padding: 0px 5px;
+    outline: none;
+    font-style: italic;
+}
+.page-number {
+    font-size: 10px;
+    color: rgb(165, 164, 164);
+}
+.sectionmenu1 {
+    height: 20px;
+}
+.sectionmenu2 {
+    height: 45px;
+    cursor: pointer;
+    
+}
+.sectionmenu3 {
+    height: 464px;
+}
+.fa-user-circle {
+    color: rgb(165, 164, 164);
+    padding: 0px 15px;
+    font-size: 30px;
+    /* position: absolute; */
+}
+.fa-user-circle:hover {
+    color: rgb(165, 164, 164);
+    padding: 0px 15px;
+    font-size: 30px;
+}
+/* .ronaldu {
+    padding: 0px 30px;
+} */
+/************** Контейнер 3 **************/
+.container3 {
+    /* display: inline-flex; */
+    width: 70%;
+    min-width: 600px;
+    background-color: white;
+    height: 800px;
+    justify-content: center;
+    border: 1px solid rgb(185, 185, 185);
+    margin-left: 5px;
+}
+.tablecon1 {
+    display: inline-block;
+}
+.table1 {
+    height: 100px;
+}
+.tablecon2 {
+    display: inline-flex;
+}
+/************** Таблица **************/
+table {
+    width: 600px;
+    text-align: left;
+    border: 1px solid rgb(185, 185, 185);
+    /* border-spacing: 0px; */
+    border-collapse: collapse;
+}  
+th {
+    border: 1px solid rgb(185, 185, 185);
+}
+
+td {
+    border: 1px solid rgb(185, 185, 185);
+}
+tr {
+    border: 1px solid rgb(185, 185, 185);
+}
+/************** Таблица Заголовок **************/
+.tableheder {
+    color: rgba(255, 255, 255, 0.781);
+    background-color: rgb(63, 62, 62);
+    font-size: 10px;
+    font: menu;
+    border-color: rgb(63, 62, 62);
+    padding: 0px 10px;
+} 
